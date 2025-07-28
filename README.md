@@ -6,8 +6,22 @@ This project analyzes the resilience of communities in Port Arthur, Texas, durin
 2. **Paper 2**: *Community resilience to wildfires: A network analysis approach by utilizing human mobility data*
 
 ---
+##  Dependencies
 
-## 🔍 Project Objectives
+- Python 3.8+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- networkx
+- dtw
+- community (python-louvain)
+## if you are using notebooks
+- pip install notebook
+
+
+##  Project Objectives
 
 - Identify disruptions to human mobility due to natural disasters.
 - Measure community resilience using the **Resilience Triangle** and **centrality-based metrics**.
@@ -16,28 +30,29 @@ This project analyzes the resilience of communities in Port Arthur, Texas, durin
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
-communityresilience/
-│
-├── data/ # Contains input datasets (e.g., .csv, .RData)
-│
-├── paper1_rcn/ # Code based on Paper 1
-│ └── paper1_rcn_analysis.py # Reads RData and computes RCN index
-│
-├── paper2_triangle/ # Code based on Paper 2
-│ └── paper2_resilience_triangle.py # Network-based resilience triangle analysis
-│
-├── notebooks/ # Jupyter Notebooks for testing and EDA
-│ ├── ra paper 1.ipynb
-│ └── ra paper 2.ipynb
-│
-├── run_all.py # Runs both paper analyses
-└── README.md # You’re here!
+- communityresilience/
+- │
+- ├── data/ # Contains input datasets (e.g., .csv, .RData)
+- │
+- ├── paper1_rcn/ # Code based on Paper 1
+- │ └── paper1_rcn_analysis.py # Reads RData and computes RCN index
+- │
+- ├── paper2_triangle/ # Code based on Paper 2
+- │ └── paper2_resilience_triangle.py # Network-based resilience triangle analysis
+- │
+- |--outputs
+- ├── notebooks/ # Jupyter Notebooks for testing and EDA
+- │ ├── ra paper 1.ipynb
+- │ └── ra paper 2.ipynb
+- │
+- ├── run_all.py # Runs both paper analyses
+- └── README.md # You’re here!
 
 ---
 
-## 📚 Conceptual Background
+##  Conceptual Background
 
 ### 📘 Paper 1: Hong et al. (2021)
 - **Focus**: Quantifying community resilience with a **Resilience Capacity Network (RCN)** index.
@@ -56,8 +71,19 @@ communityresilience/
   - Apply regression to explore factors influencing resilience.
 
 ---
+##  Outputs
 
-## ⚙️ Setup Instructions
+After running the scripts, the following output files are generated inside the `outputs/` folder:
+
+- `rcn_per_cluster.csv` – RCN index grouped by cluster
+- `monthly_centrality.csv` – Centrality scores per CBG per month
+- `resilience_triangle_metrics.csv` – Drop % and Recovery % per CBG
+- Visualization PNGs:
+  - `clustered_mobility_plot.png`
+  - `resilience_triangle_plot.png`
+  - `sample_mobility_subgraph.png`
+
+## Setup Instructions
 
 ### 1. Clone the repository
 ```bash
