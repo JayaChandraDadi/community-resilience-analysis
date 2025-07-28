@@ -61,7 +61,7 @@ communityresilience/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/communityresilience.git
+git clone https://github.com/JayaChandraDadi/community-resilience-analysis.git
 cd communityresilience
 How to Run
 1. Run Paper 1 (RCN Analysis)
