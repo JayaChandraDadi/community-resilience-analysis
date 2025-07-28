@@ -6,6 +6,18 @@ This project analyzes the resilience of communities in Port Arthur, Texas, durin
 2. **Paper 2**: *Community resilience to wildfires: A network analysis approach by utilizing human mobility data*
 
 ---
+## Disaster Context
+This analysis specifically focuses on Tropical Storm Imelda, which impacted Port Arthur, Texas in September 2019. Using SafeGraph mobility data, we analyzed human mobility disruptions and recovery patterns in the month before (August), during (September), and after the event (October) to compute:
+
+Community resilience metrics using centrality-based network analysis.
+
+Resilience triangle parameters: Drop (%), Recovery (%), and Duration of Disruption.
+
+Clustered CBGs based on resilience behavior using DTW and KMeans.
+
+Regression analysis to understand the influence of factors on resilience.
+
+
 ##  Dependencies
 
 - Python 3.8+
